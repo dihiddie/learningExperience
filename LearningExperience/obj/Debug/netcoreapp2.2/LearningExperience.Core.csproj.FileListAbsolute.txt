@@ -1,0 +1,17 @@
+C:\work\personal\LearningExperience\LearningExperience\bin\Debug\netcoreapp2.2\LearningExperience.Core.deps.json
+C:\work\personal\LearningExperience\LearningExperience\bin\Debug\netcoreapp2.2\LearningExperience.Core.dll
+C:\work\personal\LearningExperience\LearningExperience\bin\Debug\netcoreapp2.2\LearningExperience.Core.pdb
+C:\work\personal\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.csprojAssemblyReference.cache
+C:\work\personal\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.csproj.CoreCompileInputs.cache
+C:\work\personal\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.AssemblyInfoInputs.cache
+C:\work\personal\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.AssemblyInfo.cs
+C:\work\personal\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.dll
+C:\work\personal\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.pdb
+D:\work\LearningExperience\LearningExperience\bin\Debug\netcoreapp2.2\LearningExperience.Core.deps.json
+D:\work\LearningExperience\LearningExperience\bin\Debug\netcoreapp2.2\LearningExperience.Core.dll
+D:\work\LearningExperience\LearningExperience\bin\Debug\netcoreapp2.2\LearningExperience.Core.pdb
+D:\work\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.csprojAssemblyReference.cache
+D:\work\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.AssemblyInfoInputs.cache
+D:\work\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.AssemblyInfo.cs
+D:\work\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.dll
+D:\work\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.pdb

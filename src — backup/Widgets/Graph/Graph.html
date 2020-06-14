@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Граф</title>
+</head>
+<body>
+<h2 style="text-align:center">Граф</h2>
+
+<p>&nbsp;</p>
+
+<p>Виджет предназначен для отображения графа с алгоритмом модели и служит для работы с&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Node">узлами&nbsp;</a>и&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Link">связями</a>.</p>
+
+<p>Виджет состоит из следующих элементов:</p>
+
+<ul>
+	<li>Заголовок. Располагается в верхней части виджета. Содержит следующую информацию: название модели, ее&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-VersionModel">версия&nbsp;</a>и&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-StatusModel">статус</a>.</li>
+	<li><a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042350#id-%D0%93%D1%80%D0%B0%D1%84(%D0%92%D0%B8%D0%B4%D0%B6%D0%B5%D1%82)-%D0%9C%D0%B5%D0%BD%D1%8E%22%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%22">Меню &quot;Добавить&quot;</a>. Предназначено для добавления в модель новых&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Node">узлов</a>,&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Link">связей&nbsp;</a>и&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-FinishedDecision">готовых решений</a>.</li>
+	<li><a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042350#id-%D0%93%D1%80%D0%B0%D1%84(%D0%92%D0%B8%D0%B4%D0%B6%D0%B5%D1%82)-%D0%9C%D0%B5%D0%BD%D1%8E%22%D0%94%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B5%22">Меню &quot;Действие&quot;</a>. Предназначено для управления ранее добавленными&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Node">узлами&nbsp;</a>и&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Link">связями</a>.</li>
+	<li><a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042350#id-%D0%93%D1%80%D0%B0%D1%84(%D0%92%D0%B8%D0%B4%D0%B6%D0%B5%D1%82)-%D0%9A%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0%22%D0%9F%D0%B5%D1%80%D0%B5%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D1%83%D0%B7%D0%BB%D0%B0%22">Кнопка &quot;Перезапуск узла&quot;</a>. Предназначена для применения каких-либо произошедших в узле изменения.</li>
+	<li><a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042350#id-%D0%93%D1%80%D0%B0%D1%84(%D0%92%D0%B8%D0%B4%D0%B6%D0%B5%D1%82)-%D0%9E%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D0%B3%D1%80%D0%B0%D1%84%D0%B0%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8">Область отображения графа модели</a>.&nbsp;На области располагаются&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-NodeInstance">инстансы (экземпляры узла)</a>&nbsp;и связи модели.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h2 style="text-align:center">Меню &quot;Добавить&quot;</h2>
+
+<p>&nbsp;</p>
+
+<h3>Узел</h3>
+
+<p>Элемент предназначен для создания нового&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Node">узла</a>. При нажатии на элемент откроется форма создания узла. Необходимо заполнить все поля формы: название узла, описание узла, тип узла. Далее необходимо нажать на кнопку &quot;Создать&quot;. Для отмены операции необходимо нажать на кнопку &quot;Отмена&quot;.</p>
+
+<p><img src="img/Graph1.gif" alt="Добавление нового узла" /></p>
+
+<h3>Готовое решение</h3>
+
+<p>Элемент предназначен для добавления&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-FinishedDecision">готовых решения</a>&nbsp;в модель. При нажатии на элемент откроется форма выбора готового решения из галереи готовых решений. В форме необходимо выбрать<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-FinishedDecision">&nbsp;готовое решения</a>&nbsp;из списка, далее нажать на кнопку &quot;Добавить&quot;. Для отмены операции необходимо нажать на кнопку &quot;Отмена&quot;.</p>
+
+<p><img src="img/Graph2.gif" alt="Добавление готового решения" /></p>
+<p><img src="img/Graph3.gif" alt="Добавление готового решения"/></p>
+
+<h3>Связь</h3>
+
+<p>Элемент предназначен для создания новой&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Link">связи&nbsp;</a>между узлами. При нажатии на элемент откроется форма создания связи. В форме необходимо заполнить следующие поля: название исходящего узла, название входного узла, название&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-SpecificationCom">спецификации</a>. Далее необходимо нажать на кнопку &quot;Добавить&quot;. Для отмены операции необходимо нажать на кнопку &quot;Отмена&quot;.</p>
+
+<p><img src="img/Graph4.gif" alt="Добавление новой связи"/></p>
+
+<h3>Спецификацию</h3>
+
+<p>Элемент предназначен для создания новой&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-SpecificationCom">спецификации</a>. При нажатии на элемент откроется форма создания спецификации. В форме необходимо заполнить название спецификации. Далее необходимо нажать на кнопку &quot;Создать&quot;. Для отмены операции необходимо нажать на кнопку &quot;Отмена&quot;.</p>
+
+<p><img src="img/Graph5.gif" alt="Добавление новой спецификации" /></p>
+
+<p>&nbsp;</p>
+
+<h2 style="text-align:center">Меню &quot;Действие&quot;</h2>
+
+<p>&nbsp;</p>
+
+<p>Меню становится доступным после выбора узла, связи либо нескольких&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Node">узлов</a>,&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Link">связей</a>.</p>
+
+<p><em>Элементы меню, доступные при выборе узла:</em></p>
+
+<h3><strong>Изменить узел</strong></h3>
+
+<p>Элемент предназначен для редактирования информации об&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Node">узле</a>. При нажатии на элемент откроется форма для редактирования выбранного&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-No">узла</a>. Измените нужные поля формы: название узла, описание узла. Далее необходимо нажать на кнопку &quot;Изменить&quot;. Для отмены операции необходимо нажать на кнопку &quot;Отмена&quot;.</p>
+
+<p><img src="img/Graph6.gif" alt="Изменение узла" /></p>
+
+<h3><strong>Копировать узел</strong></h3>
+
+<p>Элемент предназначен для добавления копии выбранного&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Node">узла</a>. При нажатии на элемент создастся копия узла.</p>
+
+<p><img src="img/Graph7.gif" alt="Копирование узла" /></p>
+
+<h3><strong>Удалить узел</strong></h3>
+
+<p>Элемент предназначен для удаления выбранного&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-No">узла&nbsp;</a>из модели. При нажатии на элемент откроется форма подтверждения удаления узла. Для подтверждения операции необходимо нажать на кнопку &quot;Удалить&quot;. Для отмены операции необходимо нажать на кнопку &quot;Отмена&quot;.</p>
+
+<p><img src="img/Graph8.gif" alt="Удаление узла" /></p>
+
+<h3><strong>Сохранить готовое решение</strong></h3>
+
+<p>Элемент предназначен сохранения выбранных&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Node">узлов&nbsp;</a>и&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Link">связей&nbsp;</a>между ними в галерею готовых решений. При нажатии на элемент откроется форма сохранения&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-FinishedDecision">готового решения</a>. В форме необходимо заполнить следующие поля: название готового решения, описание готового решения. Далее необходимо нажать на кнопку &quot;Создать&quot;. Для отмены операции необходимо нажать на кнопку &quot;Отмена&quot;.</p>
+
+<p>Примечание. Для выбора нескольких узлов и связей зажмите клавишу CTRL.</p>
+
+<p><em><img src="img/Graph10.gif" alt="Сохранение готового решения" /></em></p>
+
+<p><em>Элементы меню, доступные при выборе связи:</em></p>
+
+<h3><strong>Удалить связь</strong></h3>
+
+<p>Элемент предназначен для удаления выбранного&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Node">узла&nbsp;</a>из модели. При нажатии на элемент откроется форма подтверждения удаления связи. Для подтверждения операции необходимо нажать на кнопку &quot;Удалить&quot;. Для отмены операции необходимо нажать на кнопку &quot;Отмена&quot;.</p>
+
+<p><img src="img/Graph9.gif" alt="Удаление связи" /></p>
+
+<p>&nbsp;</p>
+
+<h2 style="text-align:center">Кнопка &quot;Перезапуск узла&quot;</h2>
+
+<p>&nbsp;</p>
+
+<p>Кнопка становится доступной в случае, если ранее был выбран&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Episode">эпизод&nbsp;</a>модели. Перезапуск узла требуется в том случае, если необходимо применить какие-либо произошедшие в узле изменения. Для перезапуска узла необходимо выбрать нужный узел, далее нажать на кнопку &quot;Перезапуск узла&quot;.</p>
+
+<p>&nbsp;</p>
+
+<h2 style="text-align:center">Область отображения графа модели</h2>
+
+<p>&nbsp;</p>
+
+<p>Область отображения графа содержит все&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-NodeInstance">инстансы (экземпляры узла)</a>&nbsp;модели.</p>
+
+<h3><strong>Масштабирование графа</strong></h3>
+
+<p>Для того, чтобы уменьшить отображения графа в области, необходимо нажать на кнопку&nbsp;<img src="img/Graph14.png" alt="Кнопка уменьшения масштаба" style="width:21px" />. Для того, чтобы увеличить отображения графа в области, необходимо нажать на кнопку&nbsp;<img src="img/Graph15.png" alt="Кнопка увеличесния масштаба" style="height:20px" />.</p>
+
+<p><img src="img/Graph11.gif" alt="Масштабирование графа" /></p>
+
+<h3><strong>Отцентровка графа</strong></h3>
+
+<p>Для того, чтобы граф был расположен в центре области отображения и принял размеры, соответствующие размеру виджета, необходимо нажать на кнопку&nbsp;<img src="img/Graph13.png" alt="Кнопка отцентровки графа" style="width:21px" />.</p>
+
+<p><img src="img/Graph12.gif" alt="Отцентровка графа" /></p>
+
+<h3><strong>Выбор узла, связи</strong></h3>
+
+<p>Для выбора нужного&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Node">узла (узлов)</a>&nbsp;и&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Link">связи (связей)</a>&nbsp;необходимо навести курсор и щелкнуть левой кнопкой мыши. Выбранный узел (либо связь) становятся активными и доступными для редактирования. Активный узел окрасится в белый цвет, активная связь окрасится в синий цвет. Для того, чтобы отменить выбор узла (связи), необходимо навести курсор на пустую область и щелкнуть по ней левой кнопкой мыши.</p>
+
+<h3><strong>Работа с инстансом (экземпляром узла)</strong></h3>
+
+<p>Работа с&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-NodeInstance">инстансом (экземпляром узла)</a>&nbsp;становится доступной в случае, если ранее был выбран&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-Episode">эпизод</a>&nbsp;модели.</p>
+
+<ul>
+	<li>В случае, если необходимо приостановить работу инстанса, необходимо нажать на кнопку &quot;На паузу&quot;.</li>
+	<li>В случае, если необходимо возобновить работу инстанса, необходимо нажать на кнопку &quot;Включить&quot;.</li>
+	<li>В случае, если необходимо прервать работу инстанса, необходимо нажать на кнопку &quot;Прервать&quot;.</li>
+</ul>
+
+<p>Экземпляры узла могут менять свои&nbsp;<a href="http://srv-n-dev/wiki/pages/viewpage.action?pageId=56042224#id-%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8FHelp-Desk-StatusNode">статусы</a>.</p>
+
+<h2 style="text-align:center">Статусы узла:</h2>
+
+<p>Подготовка – узел в стадии настройки параметров (светло–серый цвет узла)</p>
+
+<p><img src="img/NodeStatusPreparing.png" alt="подготовка" /></p>
+
+<p>Ожидание – ожидание загрузки пакета данных для возможности запуска узла (темно–серый цвет узла)</p>
+
+<p><img src="img/NodeStatusWaiting.png" alt="ожидание" /></p>
+
+<p>Готов (пауза) – пакет данных загружен, узел готов к запуску (желтый цвет узла)</p>
+
+<p><img src="img/NodeStatusReady.png" alt="Готов" /></p>
+
+<p>Работает – процесс вычислений в узле запущен (зеленый цвет узла)</p>
+
+<p><img src="img/NodeStatusWorking.png" alt="Работает" /></p>
+
+<p>Отработал – процесс вычислений в узле успешно завершен (синий цвет узла)</p>
+
+<p><img src="img/NodeStatusDone.png" alt="Отработал" /></p>
+
+<p>Ошибка – произошла ошибка в процессе вычислений узла (красный цвет узла)</p>
+
+<p><img src="img/NodeStatusError.png" alt="Ошибка" /></p>
+
+<p>Прерван – при вычислений узла, был прерван пользователем был прерван расчёт (фиолетовый цвет узла)</p>
+
+<p><img src="img/NodeStatusForcePause.png" alt="Прерван" /></p>
+</body>
+</html>

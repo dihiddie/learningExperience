@@ -1,0 +1,28 @@
+﻿@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h2 class="text-danger">Error.</h2>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+    </p>
+}
+
+<p>
+    @{
+        if (Model.CurrentException != null)
+        {
+            <span class="text-danger">@Model.CurrentException.Message</span>
+        }
+        else
+        {
+            <span>Exception not found</span>
+        }
+    }
+</p>

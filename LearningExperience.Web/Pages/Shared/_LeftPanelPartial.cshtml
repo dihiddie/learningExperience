@@ -1,0 +1,73 @@
+﻿@model LearningExperience.Core.Models.DocumentsScheme
+
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">Learning Experience</div>
+        <div class="list-group list-group-flush">
+            @{
+                foreach (var documentLevel1 in Model.Documents.OrderBy(w => w.Index))
+                {
+                    <div style="background-color: #0FA3B1; font-size: 16px; padding-left: 7px;">
+                        @if (!documentLevel1.IsOpen)
+                        {
+                        <a class="list-group-item list-group-item-action bg-light" href="?pageName=@documentLevel1.Name">@documentLevel1.Value</a>
+                        }
+                        else
+                        {
+                        <form method="POST">
+                            <input type="hidden" name="pageName" value="@documentLevel1.Name" />
+                            <button type="submit" class="list-group-item list-group-item-action bg-light">@documentLevel1.Value</button>
+                        </form>
+                        }
+                    </div>
+                    if (documentLevel1.IsOpen)
+                    {
+                        foreach (var documentLevel2 in documentLevel1.Documents.OrderBy(w => w.Index))
+                        {
+                            <div style="padding-left: 7px; font-size: 14px; background-color: #D88B22">
+                                @if (!documentLevel2.IsOpen)
+                                {
+                                    <a class="list-group-item list-group-item-action bg-light" href="?pageName=@documentLevel2.Name">@documentLevel2.Value</a>
+                                }
+                                else
+                                {
+                                    <form method="POST">
+                                        <input type="hidden" name="pageName" value="@documentLevel2.Name" />
+                                        <button type="submit" class="list-group-item list-group-item-action bg-light">@documentLevel2.Value</button>
+                                    </form>
+                                }
+                            </div>
+                            if (documentLevel2.IsOpen)
+                            {
+                                foreach (var documentLevel3 in documentLevel2.Documents.OrderBy(w => w.Index))
+                                {
+                                    <div style="padding-left: 7px; font-size: 14px;">
+                                        @if (!documentLevel3.IsOpen)
+                                        {
+                                            <a class="list-group-item list-group-item-action bg-light" href="?pageName=@documentLevel3.Name">@documentLevel3.Value</a>
+                                        }
+                                        else
+                                        {
+                                            <form method="POST">
+                                                <input type="hidden" name="pageName" value="@documentLevel3.Name" />
+                                                <button type="submit" class="list-group-item list-group-item-action bg-light">@documentLevel3.Value</button>
+                                            </form>
+                                        }
+                                    </div>
+                                    if (documentLevel3.IsOpen)
+                                    {
+                                        foreach (var documentLevel4 in documentLevel3.Documents.OrderBy(w => w.Index))
+                                        {
+                                            <div style="padding-left: 7px; font-size: 12px;">
+                                                <a class="list-group-item list-group-item-action bg-light" href="?pageName=@documentLevel4.Name">@documentLevel4.Value</a>
+                                            </div>
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        </div>
+    </div>

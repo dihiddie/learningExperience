@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Начальная Help-Desk</title>
+</head>
+<body>
+<h2 style="text-align:center">О системе&nbsp;</h2>
+
+<p style="text-align:center">&nbsp; Назначение системы &ndash; моделирование и решение нестандартных задач анализа, управления и обработки информации на основе применения современных информационно-аналитических технологий поддержки принятия решений.</p>
+
+<p>&nbsp;</p>
+
+<h2 style="text-align:center">Глоссарий</h2>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:1000px">
+	<tbody>
+		<tr>
+			<td>Модель</td>
+			<td>
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Запрограммированный в системе алгоритм, на основе которого производится обработка входных данных и вывод результата моделирования для решения необходимой задачи.</span></p>
+
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Статусы модели</span><span style="font-family:&quot;Times New Roman&quot;,serif">:</span></p>
+
+			<ul>
+				<li><span style="font-family:&quot;Times New Roman&quot;,serif">Черновик &ndash; модель в стадии настройки/тестирования алгоритма</span></li>
+				<li><span style="font-family:&quot;Times New Roman&quot;,serif">Активно &ndash; настроенная модель, готовая к использованию для получения результата моделирования</span></li>
+			</ul>
+			<span style="font-size:11.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Архив &ndash; неактивный статус модели, модель невозможно использовать для запуска процесса моделирования</span></span></td>
+		</tr>
+		<tr>
+			<td>Версия модели</td>
+			<td>
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Состояние модели с определенным набором узлов и параметров.</span></p>
+
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Статусы версии модели по готовности к действию:</span></p>
+
+			<ul>
+				<li><span style="font-family:&quot;Times New Roman&quot;,serif">Черновик &ndash; версия модели в стадии настройки/тестирования алгоритма</span></li>
+				<li><span style="font-family:&quot;Times New Roman&quot;,serif">Готов к запуску &ndash; версия модели с настроенным набором узлов и параметров, готовая к запуску процесса моделирования</span></li>
+			</ul>
+			<span style="font-size:11.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Архив &ndash; версия модели в неактивном&nbsp;</span></span>состоянии, выполнение действий с моделью в данной версии не представляется возможным</td>
+		</tr>
+		<tr>
+			<td>Эпизод</td>
+			<td>
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Составная часть процесса моделирования, характеризующаяся набором настроенных параметров определённой модели, позволяющая производить вычисление на основе запрограммированных в системе алгоритмов.</span></p>
+
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Статусы эпизода</span><span style="font-family:&quot;Times New Roman&quot;,serif">:</span></p>
+
+			<ul>
+				<li><span style="font-family:&quot;Times New Roman&quot;,serif">Черновик &ndash; эпизод модели в стадии настройки/тестирования алгоритма</span></li>
+			</ul>
+
+			<ul>
+				<li><span style="font-family:&quot;Times New Roman&quot;,serif">Актуальный &ndash; настроенный эпизод модели, готовый к использованию для получения результата моделирования</span></li>
+				<li><span style="font-family:&quot;Times New Roman&quot;,serif">Архив &ndash; неактивный статус эпизода модели, эпизод невозможно использовать для запуска процесса моделирования</span></li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Узел</td>
+			<td>
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Составная часть модели с набором параметров и данных, необходимых для преобразования входного пакета данных и/или вывода промежуточного/итогового выходного результата моделирования согласно заложенному алгоритму.</span></p>
+
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Типы узлов:</span></p>
+
+			<ul>
+				<li><span style="font-family:&quot;Times New Roman&quot;,serif">Вычислительный &ndash; предназначен для обработки входящего пакета данных согласно алгоритму</span></li>
+				<li><span style="font-family:&quot;Times New Roman&quot;,serif">Корректировочный &ndash; предназначен для просмотра результата моделирования (исходящего пакета) </span><span style="font-family:&quot;Times New Roman&quot;,serif">в узле</span></li>
+			</ul>
+
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Список статусов (анкор)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>Версия узла</td>
+			<td>Вариация структуры узла. Структура версии узла состоит из фиксированного набора скриптов обработки и параметров.</td>
+		</tr>
+		<tr>
+			<td>Экземпляр узла</td>
+			<td>
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Событие, хранящее историю об одном запуске узла<span style="color:red">&nbsp;</span>модели.</span></p>
+
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Инстансы узла:</span></p>
+
+			<ul>
+				<li><span style="font-family:&quot;Times New Roman&quot;,serif">Установка активности узла &ndash; запуск вычислений в узле</span></li>
+				<li><span style="font-family:&quot;Times New Roman&quot;,serif">Приостановка узла &ndash; временная остановка вычислений в узле с последующей возможностью продолжения</span></li>
+			</ul>
+			<span style="font-size:11.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Прерывание работы узла (при открытом эпизоде) &ndash; полная остановка вычислений в узле</span></span><span style="font-size:8.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">&nbsp;</span></span><span style="font-size:11.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">без возможности продолжения в рамках данного экземпляра узла</span></span></td>
+		</tr>
+		<tr>
+			<td>Связь</td>
+			<td>Маршрут расчетов от одного узла к другому. В интерфейсе системы представляет собой стрелку, соединяющую два и более узлов.</td>
+		</tr>
+		<tr>
+			<td>Пакет данных</td>
+			<td>Набор файлов, сформированный в ходе выполнения скрипта, либо загруженный пользователем при работе с пользовательским интерфейсом системы</td>
+		</tr>
+		<tr>
+			<td>Исполнитель</td>
+			<td>Аппаратные средства для выполнения сценария скрипта.</td>
+		</tr>
+		<tr>
+			<td>Спецификация&nbsp;</td>
+			<td>Соединительный элемент двух и более узлов , несущий информацию о составе, структуре, месте хранилища и маршрутах пакета данных</td>
+		</tr>
+		<tr>
+			<td>Параметры</td>
+			<td>
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Задаваемые характеристики узла.</span></p>
+
+			<ul>
+				<li><span style="font-family:&quot;Times New Roman&quot;,serif">Глобальные &ndash; параметры, общие для всех узлов модели</span></li>
+				<li><span style="font-size:11.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Локальные &ndash; параметры, задаваемые для конкретного </span></span><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="font-family:&quot;Times New Roman&quot;,serif">узла</span></span></span><span style="font-size:11.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"> модели</span></span></li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Скрипт</td>
+			<td>
+			<p><span style="font-family:&quot;Times New Roman&quot;,serif">Последовательность действий, описанных с помощью скриптового языка программирования для автоматического выполнения вычислений алгоритма при запуске узлов модели при наличии входного пакета данных.</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>Версия скрипта</td>
+			<td>Вариация структуры и состава&nbsp;скрипта. Представляет собой порядковый номер вариации структуры скрипта в рамках одной модели.</td>
+		</tr>
+		<tr>
+			<td>Готовое решение</td>
+			<td>Комплекс настроенных узлов, связей, глобальных/локальных параметров, скриптов, составляющих модель для решения задачи.</td>
+		</tr>
+		<tr>
+			<td>Панель АРМ</td>
+			<td>Рабочее пространство системы, в котором производится моделирование с возможностью настройки инструментов пользовательского интерфейса (виджетов) нужным образом.</td>
+		</tr>
+		<tr>
+			<td>Область видимости</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+</body>
+</html>
