@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GT3BYiH5+7ymLEtUmEOAKqi6rPz6X0QKKSHDl7RQHuF5cNyvj2rPW38yH0SQSWVJT7sekCO43hgNVWg/3RX0fw==",
+  "dgSpecHash": "2g7S2IVn2iBFhXneSbtK2blykH1GrjYv8VTnNYEDbJL/B6K5n2NCc0HgOnvBqBaRKefGDfih+x45+sUrSFqssw==",
   "success": true,
-  "projectFilePath": "C:\\work\\personal\\LearningExperience\\Utils\\LearningExperience.TopicCreator\\LearningExperience.TopicCreator.csproj",
+  "projectFilePath": "D:\\work\\personal\\learningExperience\\Utils\\LearningExperience.TopicCreator\\LearningExperience.TopicCreator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gulnaz.zagrtdinova\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],

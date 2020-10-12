@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\work\\LearningExperience\\LearningExperience.Web\\LearningExperience.Web.csproj": {}
+    "D:\\work\\personal\\learningExperience\\LearningExperience.Web\\LearningExperience.Web.csproj": {}
   },
   "projects": {
-    "D:\\work\\LearningExperience\\LearningExperience.Web\\LearningExperience.Web.csproj": {
+    "D:\\work\\personal\\learningExperience\\LearningExperience.Web\\LearningExperience.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\LearningExperience\\LearningExperience.Web\\LearningExperience.Web.csproj",
+        "projectUniqueName": "D:\\work\\personal\\learningExperience\\LearningExperience.Web\\LearningExperience.Web.csproj",
         "projectName": "LearningExperience.Web",
-        "projectPath": "D:\\work\\LearningExperience\\LearningExperience.Web\\LearningExperience.Web.csproj",
-        "packagesPath": "C:\\Users\\Гульназ\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\LearningExperience\\LearningExperience.Web\\obj\\",
+        "projectPath": "D:\\work\\personal\\learningExperience\\LearningExperience.Web\\LearningExperience.Web.csproj",
+        "packagesPath": "C:\\Users\\gulnaz.zagrtdinova\\.nuget\\packages\\",
+        "outputPath": "D:\\work\\personal\\learningExperience\\LearningExperience.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Гульназ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gulnaz.zagrtdinova\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +31,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\work\\LearningExperience\\LearningExperience\\LearningExperience.Core.csproj": {
-                "projectPath": "D:\\work\\LearningExperience\\LearningExperience\\LearningExperience.Core.csproj"
+              "D:\\work\\personal\\learningExperience\\LearningExperience\\LearningExperience.Core.csproj": {
+                "projectPath": "D:\\work\\personal\\learningExperience\\LearningExperience\\LearningExperience.Core.csproj"
               }
             }
           }
@@ -75,25 +74,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\work\\LearningExperience\\LearningExperience\\LearningExperience.Core.csproj": {
+    "D:\\work\\personal\\learningExperience\\LearningExperience\\LearningExperience.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\LearningExperience\\LearningExperience\\LearningExperience.Core.csproj",
+        "projectUniqueName": "D:\\work\\personal\\learningExperience\\LearningExperience\\LearningExperience.Core.csproj",
         "projectName": "LearningExperience.Core",
-        "projectPath": "D:\\work\\LearningExperience\\LearningExperience\\LearningExperience.Core.csproj",
-        "packagesPath": "C:\\Users\\Гульназ\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\LearningExperience\\LearningExperience\\obj\\",
+        "projectPath": "D:\\work\\personal\\learningExperience\\LearningExperience\\LearningExperience.Core.csproj",
+        "packagesPath": "C:\\Users\\gulnaz.zagrtdinova\\.nuget\\packages\\",
+        "outputPath": "D:\\work\\personal\\learningExperience\\LearningExperience\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Гульназ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gulnaz.zagrtdinova\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -147,7 +145,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

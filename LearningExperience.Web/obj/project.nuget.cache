@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xFJ/yrEKiylWClfCdKVgJB9hv7h1G9DpRzWxpA/xtzUA1HhXE+/stJEUeeoNOMQeJDwzSjjUVrohxPth6ru/eg==",
+  "dgSpecHash": "cAnvlCkqVm4+KjE2yfe8GmsjHFyvkuf+re5GQ21Gc51gWLAvWinVDzxvVCN9ZqPaI4tBemoyDr5zKf6UP6biCw==",
   "success": true,
-  "projectFilePath": "C:\\work\\personal\\LearningExperience\\LearningExperience.Web\\LearningExperience.Web.csproj",
+  "projectFilePath": "D:\\work\\personal\\learningExperience\\LearningExperience.Web\\LearningExperience.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gulnaz.zagrtdinova\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\gulnaz.zagrtdinova\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",

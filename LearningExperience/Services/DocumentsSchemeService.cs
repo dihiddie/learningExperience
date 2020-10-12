@@ -21,9 +21,11 @@
 
         private readonly int maxFileReadAttemptsCount;
 
+        private readonly string documentsSchemeFolder;
+
         public DocumentsSchemeService(IConfiguration configuration)
         {
-            var documentsSchemeFolder = configuration["DocumentsSchemeFolder"]
+            documentsSchemeFolder = configuration["DocumentsSchemeFolder"]
                                         ?? throw new NullReferenceException(
                                             "Configuration key - DocumentsSchemeFolder doesn't exist");
 
@@ -35,6 +37,8 @@
 
             fileProvider = new PhysicalFileProvider(documentsSchemeFolder);
             GetDocumentScheme();
+
+            SetFoldersToLevelFour();
         }
 
         private int FileReadAttemptsCount { get; set; }
@@ -77,10 +81,6 @@
                     GetDocumentScheme();
                 }
             }
-            catch
-            {
-                // ignored
-            }
         }
 
         private void CreateFolders()
@@ -108,7 +108,7 @@
 
                         foreach (var documentLevel4 in documentLevel3.Documents)
                         {
-                            var folder = @"C:\work\personal\LearningExperience\src";
+                            var folder = documentsSchemeFolder;
                             var pathLevel4 = Path.Combine(
                                 folder,
                                 documentLevel1.Value,
@@ -123,9 +123,39 @@
             }
         }
 
+        private void SetFoldersToLevelFour()
+        {
+            foreach (var documentLevel1 in DocumentScheme.Documents)
+            {
+                documentLevel1.Path = null;
+
+                foreach (var documentLevel2 in documentLevel1.Documents)
+                {
+                    documentLevel2.Path = null;
+
+                    foreach (var documentLevel3 in documentLevel2.Documents)
+                    {
+                        documentLevel3.Path = null;
+
+                        foreach (var documentLevel4 in documentLevel3.Documents)
+                        {
+                            var folder = documentsSchemeFolder;
+                            var pathLevel4 = Path.Combine(
+                                folder,
+                                documentLevel1.Value,
+                                documentLevel2.Value,
+                                documentLevel3.Value,
+                                $"{documentLevel4.Value}.html");
+                            documentLevel4.Path = pathLevel4;
+                        }
+                    }
+                }
+            }
+        }
+
         private void CreateFolderIfNotExists(string folderName)
         {
-            var folder = @"C:\work\personal\LearningExperience\src";
+            var folder = documentsSchemeFolder;
             if (!Directory.Exists(Path.Combine(folder, folderName)))
                 Directory.CreateDirectory(Path.Combine(folder, folderName));
         }
