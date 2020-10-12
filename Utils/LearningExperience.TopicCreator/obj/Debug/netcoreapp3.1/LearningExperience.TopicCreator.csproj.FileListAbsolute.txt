@@ -22,3 +22,16 @@ D:\work\LearningExperience\Utils\LearningExperience.TopicCreator\obj\Debug\netco
 D:\work\LearningExperience\Utils\LearningExperience.TopicCreator\obj\Debug\netcoreapp3.1\LearningExperience.TopicCreator.AssemblyInfo.cs
 D:\work\LearningExperience\Utils\LearningExperience.TopicCreator\obj\Debug\netcoreapp3.1\LearningExperience.TopicCreator.dll
 D:\work\LearningExperience\Utils\LearningExperience.TopicCreator\obj\Debug\netcoreapp3.1\LearningExperience.TopicCreator.pdb
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\bin\Debug\netcoreapp3.1\LearningExperience.TopicCreator.exe
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\bin\Debug\netcoreapp3.1\LearningExperience.TopicCreator.deps.json
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\bin\Debug\netcoreapp3.1\LearningExperience.TopicCreator.runtimeconfig.json
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\bin\Debug\netcoreapp3.1\LearningExperience.TopicCreator.runtimeconfig.dev.json
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\bin\Debug\netcoreapp3.1\LearningExperience.TopicCreator.dll
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\bin\Debug\netcoreapp3.1\LearningExperience.TopicCreator.pdb
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\obj\Debug\netcoreapp3.1\LearningExperience.TopicCreator.csprojAssemblyReference.cache
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\obj\Debug\netcoreapp3.1\LearningExperience.TopicCreator.AssemblyInfoInputs.cache
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\obj\Debug\netcoreapp3.1\LearningExperience.TopicCreator.AssemblyInfo.cs
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\obj\Debug\netcoreapp3.1\LearningExperience.TopicCreator.csproj.CoreCompileInputs.cache
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\obj\Debug\netcoreapp3.1\LearningExperience.TopicCreator.dll
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\obj\Debug\netcoreapp3.1\LearningExperience.TopicCreator.pdb
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\Utils\LearningExperience.TopicCreator\obj\Debug\netcoreapp3.1\LearningExperience.TopicCreator.genruntimeconfig.cache

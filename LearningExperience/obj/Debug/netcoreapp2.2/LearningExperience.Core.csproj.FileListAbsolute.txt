@@ -15,6 +15,15 @@ D:\work\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningEx
 D:\work\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.AssemblyInfo.cs
 D:\work\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.dll
 D:\work\LearningExperience\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.pdb
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\LearningExperience\bin\Debug\netcoreapp2.2\LearningExperience.Core.deps.json
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\LearningExperience\bin\Debug\netcoreapp2.2\LearningExperience.Core.dll
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\LearningExperience\bin\Debug\netcoreapp2.2\LearningExperience.Core.pdb
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.AssemblyInfoInputs.cache
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.AssemblyInfo.cs
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.csproj.CoreCompileInputs.cache
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.dll
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.pdb
+C:\Users\gulnaz.zagrtdinova\Downloads\learningExperience-master\LearningExperience\obj\Debug\netcoreapp2.2\LearningExperience.Core.csprojAssemblyReference.cache
 D:\work\personal\learningExperience\LearningExperience\bin\Debug\netcoreapp2.2\LearningExperience.Core.deps.json
 D:\work\personal\learningExperience\LearningExperience\bin\Debug\netcoreapp2.2\LearningExperience.Core.dll
 D:\work\personal\learningExperience\LearningExperience\bin\Debug\netcoreapp2.2\LearningExperience.Core.pdb

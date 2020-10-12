@@ -1,7 +1,8 @@
 ﻿@page
+@using LearningExperience.Web
 @model IndexModel
 @{
-    ViewData["Title"] = "Главная";
+    ViewData["Title"] = Title.Value;
 }
     <div style="margin: 15px">
         @Html.Raw(Model.HtmlPageContent)
