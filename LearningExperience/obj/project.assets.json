@@ -948,25 +948,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Гульназ\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\gulnaz.zagrtdinova\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\LearningExperience\\LearningExperience\\LearningExperience.Core.csproj",
+      "projectUniqueName": "D:\\work\\personal\\learningExperience\\LearningExperience\\LearningExperience.Core.csproj",
       "projectName": "LearningExperience.Core",
-      "projectPath": "D:\\work\\LearningExperience\\LearningExperience\\LearningExperience.Core.csproj",
-      "packagesPath": "C:\\Users\\Гульназ\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\LearningExperience\\LearningExperience\\obj\\",
+      "projectPath": "D:\\work\\personal\\learningExperience\\LearningExperience\\LearningExperience.Core.csproj",
+      "packagesPath": "C:\\Users\\gulnaz.zagrtdinova\\.nuget\\packages\\",
+      "outputPath": "D:\\work\\personal\\learningExperience\\LearningExperience\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Гульназ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gulnaz.zagrtdinova\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1020,7 +1018,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

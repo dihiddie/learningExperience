@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4ao+L+BrI22Typ+zDL98qrLGXvkI/0DWJWnCaOm0Jeoh2EnTg6BGTJDRnkAan5nfQRL5VRBpIVwwV6nM90O5BA==",
+  "dgSpecHash": "Nv5ezpZztsGCGhg6wcCJ2lw8mUD2KM4cLVSn+oHOc6XFpByHyq3bJ58ePhtmUd5nyosMlKlV7ZT8KvkMtw9kWg==",
   "success": true,
-  "projectFilePath": "C:\\work\\personal\\LearningExperience\\LearningExperience\\LearningExperience.Core.csproj",
+  "projectFilePath": "D:\\work\\personal\\learningExperience\\LearningExperience\\LearningExperience.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gulnaz.zagrtdinova\\.nuget\\packages\\microsoft.extensions.configuration\\2.2.0\\microsoft.extensions.configuration.2.2.0.nupkg.sha512",
     "C:\\Users\\gulnaz.zagrtdinova\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.2.0\\microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
