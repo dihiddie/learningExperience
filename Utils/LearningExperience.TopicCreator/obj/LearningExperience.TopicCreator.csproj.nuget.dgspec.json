@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\work\\LearningExperience\\Utils\\LearningExperience.TopicCreator\\LearningExperience.TopicCreator.csproj": {}
+    "D:\\work\\personal\\learningExperience\\Utils\\LearningExperience.TopicCreator\\LearningExperience.TopicCreator.csproj": {}
   },
   "projects": {
-    "D:\\work\\LearningExperience\\Utils\\LearningExperience.TopicCreator\\LearningExperience.TopicCreator.csproj": {
+    "D:\\work\\personal\\learningExperience\\Utils\\LearningExperience.TopicCreator\\LearningExperience.TopicCreator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\LearningExperience\\Utils\\LearningExperience.TopicCreator\\LearningExperience.TopicCreator.csproj",
+        "projectUniqueName": "D:\\work\\personal\\learningExperience\\Utils\\LearningExperience.TopicCreator\\LearningExperience.TopicCreator.csproj",
         "projectName": "LearningExperience.TopicCreator",
-        "projectPath": "D:\\work\\LearningExperience\\Utils\\LearningExperience.TopicCreator\\LearningExperience.TopicCreator.csproj",
-        "packagesPath": "C:\\Users\\Гульназ\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\LearningExperience\\Utils\\LearningExperience.TopicCreator\\obj\\",
+        "projectPath": "D:\\work\\personal\\learningExperience\\Utils\\LearningExperience.TopicCreator\\LearningExperience.TopicCreator.csproj",
+        "packagesPath": "C:\\Users\\gulnaz.zagrtdinova\\.nuget\\packages\\",
+        "outputPath": "D:\\work\\personal\\learningExperience\\Utils\\LearningExperience.TopicCreator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Гульназ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gulnaz.zagrtdinova\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -52,12 +51,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
