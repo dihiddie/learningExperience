@@ -40,6 +40,13 @@
 
         public void OnPostSearch()
         {
+            if (string.IsNullOrEmpty(SearchText))
+            {
+                // DocumentsScheme = documentsSchemeService.GetScheme();
+                ViewData[nameof(DocumentsScheme)] = documentsSchemeService.GetRenewedScheme();
+                return;
+            }
+
             var filteredList = new List<DocumentsScheme.Document>();
 
             for (int i = 0; i < DocumentsScheme.Documents.Count; i++)

@@ -7,5 +7,7 @@
         string GetDocumentsSchemeFolder();
 
         DocumentsScheme GetScheme();
+
+        DocumentsScheme GetRenewedScheme();
     }
 }
