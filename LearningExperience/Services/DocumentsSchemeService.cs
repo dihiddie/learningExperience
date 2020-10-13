@@ -51,6 +51,13 @@
 
         public DocumentsScheme GetScheme() => DocumentScheme;
 
+        public DocumentsScheme GetRenewedScheme()
+        {
+            DocumentScheme = GetDocumentsScheme();
+            SetFoldersToLevelFour();
+            return DocumentScheme;
+        }
+
         public void Dispose()
         {
             fileProvider?.Dispose();
@@ -67,8 +74,7 @@
             try
             {
                 Thread.Sleep(10);
-                var fileContent = File.ReadAllText(fileProvider.GetFileInfo(WatchFileName).PhysicalPath);
-                DocumentScheme = JsonConvert.DeserializeObject<DocumentsScheme>(fileContent);
+                DocumentScheme = GetDocumentsScheme();
                 TokenCallback?.Dispose();
                 WatchForFile();
                 FileReadAttemptsCount = 0;
@@ -81,6 +87,12 @@
                     GetDocumentScheme();
                 }
             }
+        }
+
+        private DocumentsScheme GetDocumentsScheme()
+        {
+            var fileContent = File.ReadAllText(fileProvider.GetFileInfo(WatchFileName).PhysicalPath);
+            return JsonConvert.DeserializeObject<DocumentsScheme>(fileContent);
         }
 
         private void CreateFolders()
