@@ -114,6 +114,7 @@
 
             DocumentsScheme.Documents = filteredList;
             ViewData[nameof(DocumentsScheme)] = DocumentsScheme;
+            Title.SearchText = SearchText;
         }
 
         private void OpenClosePage(string pageName, bool openPage = true)
@@ -128,6 +129,7 @@
                                       Path.Combine(documentsSchemeService.GetDocumentsSchemeFolder(), document.Path))
                                   : null;
             ViewData[nameof(DocumentsScheme)] = DocumentsScheme;
+            SearchText = Title.SearchText;
         }
     }
 }
