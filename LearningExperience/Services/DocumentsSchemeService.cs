@@ -51,7 +51,12 @@
 
         public DocumentsScheme GetScheme() => DocumentScheme;
 
-        public DocumentsScheme GetRenewedScheme() => GetDocumentsScheme();
+        public DocumentsScheme GetRenewedScheme()
+        {
+            DocumentScheme = GetDocumentsScheme();
+            SetFoldersToLevelFour();
+            return DocumentScheme;
+        }
 
         public void Dispose()
         {

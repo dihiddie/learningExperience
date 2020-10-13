@@ -1,5 +1,6 @@
 ﻿namespace LearningExperience.Web.Pages
 {
+    using System;
     using System.Collections.Generic;
     using System.IO;
 
@@ -13,8 +14,6 @@
 
     public class IndexModel : PageModel
     {
-        public readonly DocumentsScheme DocumentsScheme;
-
         private readonly IDocumentsSchemeService documentsSchemeService;
 
         public IndexModel(IDocumentsSchemeService documentsSchemeService)
@@ -23,6 +22,8 @@
             DocumentsScheme = documentsSchemeService.GetScheme();
         }
 
+        public DocumentsScheme DocumentsScheme { get; set; }
+
         public string HtmlPageContent { get; set; }
 
         [BindProperty]
@@ -30,7 +31,7 @@
 
         public void OnGet(string pageName)
         {
-            OpenClosePage(string.IsNullOrEmpty(pageName) ? "About" : pageName);
+            OpenClosePage(string.IsNullOrEmpty(pageName) ? "Development" : pageName, pageName != null);
         }
 
         public void OnPost(string pageName)
@@ -42,8 +43,10 @@
         {
             if (string.IsNullOrEmpty(SearchText))
             {
-                // DocumentsScheme = documentsSchemeService.GetScheme();
-                ViewData[nameof(DocumentsScheme)] = documentsSchemeService.GetRenewedScheme();
+                var doc = documentsSchemeService.GetRenewedScheme();
+                DocumentsScheme.Documents = doc.Documents;
+                ViewData[nameof(DocumentsScheme)] = DocumentsScheme;
+                Title.SearchText = null;
                 return;
             }
 
@@ -121,6 +124,7 @@
 
             DocumentsScheme.Documents = filteredList;
             ViewData[nameof(DocumentsScheme)] = DocumentsScheme;
+            Title.SearchText = SearchText;
         }
 
         private void OpenClosePage(string pageName, bool openPage = true)
@@ -130,11 +134,26 @@
                 doc => doc.Name == pageName);
             if (document == null) throw new PageNotFoundException($"Not found document with name equal {pageName}");
             document.IsOpen = openPage;
-            HtmlPageContent = !string.IsNullOrEmpty(document.Path)
-                                  ? System.IO.File.ReadAllText(
-                                      Path.Combine(documentsSchemeService.GetDocumentsSchemeFolder(), document.Path))
-                                  : null;
+            if (string.IsNullOrEmpty(document.Path)) HtmlPageContent = null;
+            else
+            {
+                try
+                {
+                    HtmlPageContent = System.IO.File.ReadAllText(Path.Combine(documentsSchemeService.GetDocumentsSchemeFolder(), document.Path));
+                }
+                catch (Exception e)
+                {
+                    HtmlPageContent =
+                        $"Файл по адресу {Path.Combine(documentsSchemeService.GetDocumentsSchemeFolder(), document.Path)} не найден!";
+                }
+            }
+
+            //HtmlPageContent = !string.IsNullOrEmpty(document.Path)
+            //                      ? System.IO.File.ReadAllText(
+            //                          Path.Combine(documentsSchemeService.GetDocumentsSchemeFolder(), document.Path))
+            //                      : null;
             ViewData[nameof(DocumentsScheme)] = DocumentsScheme;
+            SearchText = Title.SearchText;
         }
     }
 }
