@@ -4,7 +4,8 @@
 @{
     ViewData["Title"] = Title.Value;
 }
-    <div style="margin: 15px">
-        @Html.Raw(Model.HtmlPageContent)
-    </div>
+<div style="margin: 15px">
+    @Html.HiddenFor(m => m.SearchText)
+    @Html.Raw(Model.HtmlPageContent)
+</div>
 
