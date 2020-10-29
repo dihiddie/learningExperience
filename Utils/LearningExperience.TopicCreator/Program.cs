@@ -18,11 +18,7 @@
                 int iterator = 0;
                 foreach (var splittedTopic in splittedTopics)
                 {
-                    var combined = @$"{{""Name"":""{splittedTopic.Trim()}"",
-                           ""Value"":""{splittedTopic.Trim()}"",
-                           ""Path"":""About\\About.html"",
-                           ""Index"":{iterator + 1},
-                           ""Documents"":[]";
+                    var combined = $"{{\"Name\":\"{splittedTopic.Trim()}\",\r\n                           \"Value\":\"{splittedTopic.Trim()}\",\r\n                           \"Path\":\"About\\\\About.html\",\r\n                           \"Index\":{iterator + 1},\r\n                           \"Documents\":[]";
                     compinedTopics.Add(combined);
                     iterator++;
                 }

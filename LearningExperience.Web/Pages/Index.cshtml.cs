@@ -1,6 +1,5 @@
 ﻿namespace LearningExperience.Web.Pages
 {
-    using System;
     using System.Collections.Generic;
     using System.IO;
 
@@ -134,24 +133,10 @@
                 doc => doc.Name == pageName);
             if (document == null) throw new PageNotFoundException($"Not found document with name equal {pageName}");
             document.IsOpen = openPage;
-            if (string.IsNullOrEmpty(document.Path)) HtmlPageContent = null;
-            else
-            {
-                try
-                {
-                    HtmlPageContent = System.IO.File.ReadAllText(Path.Combine(documentsSchemeService.GetDocumentsSchemeFolder(), document.Path));
-                }
-                catch (Exception e)
-                {
-                    HtmlPageContent =
-                        $"Файл по адресу {Path.Combine(documentsSchemeService.GetDocumentsSchemeFolder(), document.Path)} не найден!";
-                }
-            }
-
-            //HtmlPageContent = !string.IsNullOrEmpty(document.Path)
-            //                      ? System.IO.File.ReadAllText(
-            //                          Path.Combine(documentsSchemeService.GetDocumentsSchemeFolder(), document.Path))
-            //                      : null;
+            HtmlPageContent = !string.IsNullOrEmpty(document.Path)
+                                  ? System.IO.File.ReadAllText(
+                                      Path.Combine(documentsSchemeService.GetDocumentsSchemeFolder(), document.Path))
+                                  : null;
             ViewData[nameof(DocumentsScheme)] = DocumentsScheme;
             SearchText = Title.SearchText;
         }
